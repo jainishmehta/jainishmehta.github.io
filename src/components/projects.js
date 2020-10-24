@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import Fade from "react-reveal/Fade";
-
+import smartv from "./smartv.PNG"
+import aktiv1 from "./Aktiv1.PNG"
+import aktiv2 from "./Aktiv2.PNG"
+import aktiv3 from "./Aktiv3.PNG"
+import thrifter1 from "./thrifter1.PNG"
+import thrifter2 from "./thrifter2.PNG"
+import thrifter3 from "./thrifter3.PNG"
+import threedprinting1 from "./3dprinting1.PNG"
+import threedprinting2 from "./3dprinting2.PNG"
+import ceyc from "./ceyc.PNG"
+import waterloop1 from "./waterloop1.PNG"
+import waterloop2 from "./waterloop2.PNG"
 
 class Projects extends Component {
   constructor(props) {
@@ -19,9 +30,9 @@ class Projects extends Component {
               <CardTitle
                   className="smartvision"
                   style={{
-                color: '#fff',
-                height: '176px'
-              }}>SmartVision</CardTitle>
+                    color: '#fff',
+                    height: '176px'
+                  }}>SmartVision</CardTitle>
               <CardText>
                 The goal of this project was to help disabled individuals interact with their surroundings using a
                 software that takes in images and converts it into text that is later converted into speech. I got
@@ -38,7 +49,7 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{height:'100', width:'75'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/smartv.PNG")} alt="cannot display"
+                     src={smartv} alt="cannot display"
                 />
               </CardActions>
               <CardText style={{
@@ -65,7 +76,7 @@ class Projects extends Component {
                   style={{
                     color: '#fff',
                     height: '176px'
-                   }}>Aktiv</CardTitle>
+                  }}>Aktiv</CardTitle>
               <CardText>
                 This project involved creating a robot that received an input and typed the response onto a computer
                 keyboard. This required mapping the keyboard and maintaining accuracy using a PID controller. At the
@@ -77,20 +88,20 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{height:'100', width:'60'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/Aktiv1.PNG")} alt="cannot display"
+                     src={aktiv1} alt="cannot display"
                 />
-               </CardActions>
+              </CardActions>
               <CardActions style={{
                 textAlign:'center'
               }} border>
                 <img style={{height:'80', width:'20'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/Aktiv2.PNG")} alt="cannot display"
+                     src={aktiv2} alt="cannot display"
                 />
               </CardActions><CardActions style={{
               textAlign:'center'
             }} border>
               <img style={{height:'80', width:'20'}}
-                   src={require("C:/Users/jaini/react-portfolio/src/components/Aktiv3.PNG")} alt="cannot display"
+                   src={aktiv3} alt="cannot display"
               />
             </CardActions>
               <CardText style={{
@@ -115,9 +126,9 @@ class Projects extends Component {
               <CardTitle
                   className="thrifter"
                   style={{
-                color: '#fff',
-                height: '176px',
-                 }}>Thrifter</CardTitle>
+                    color: '#fff',
+                    height: '176px',
+                  }}>Thrifter</CardTitle>
               <CardText>
                 This project aimed to encourage users to thrift shop in order to minimize the impacts of fast fashion on
                 the environment. This web application worked by finding the most optimal match between a database of
@@ -136,19 +147,19 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{height:'100', width:'60'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/thrifter1.PNG")} alt="cannot display"
+                     src={thrifter1} alt="cannot display"
                 />
               </CardActions>
               <CardActions  border>
                 <img style={{height:'100', width:'30'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/thrifter2.PNG")} alt="cannot display"
+                     src={thrifter2} alt="cannot display"
                 />
               </CardActions>
               <CardActions style={{
                 textAlign:'center'
               }} border>
                 <img style={{height:'100', width:'30'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/thrifter3.PNG")} alt="cannot display"
+                     src={thrifter3} alt="cannot display"
                 />
               </CardActions>
               <CardText style={{
@@ -176,9 +187,9 @@ class Projects extends Component {
               <CardTitle
                   className="rapid-prototyping"
                   style={{
-                color: '#fff',
-                height: '176px',
-                }}>Rapid Prototyping</CardTitle>
+                    color: '#fff',
+                    height: '176px',
+                  }}>Rapid Prototyping</CardTitle>
               <CardText>
                 I worked alongside a graduate biomedical engineering student on a study about rapid prototyping cardiac
                 anatomy of patients with congenital heart disease to be used as an education tool for surgeons.
@@ -193,14 +204,14 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{height:'100'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/3dprinting1.PNG")} alt="cannot display"
+                     src={threedprinting1} alt="cannot display"
                 />
               </CardActions>
               <CardActions style={{
                 textAlign:'center'
               }} border>
                 <img style={{height:'100'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/3dprinting2.PNG")} alt="cannot display"
+                     src={threedprinting2} alt="cannot display"
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
@@ -212,9 +223,9 @@ class Projects extends Component {
               <CardTitle
                   className="ceyc"
                   style={{
-                color: '#fff',
-                height: '176px'
-              }}>City of Edmonton Youth Council</CardTitle>
+                    color: '#fff',
+                    height: '176px'
+                  }}>City of Edmonton Youth Council</CardTitle>
               <CardText>
                 I was honored to serve in the health and wellness subcommittee wherein I was able to create projects that destigimized mental health, as well as encourage healthy lifestyles for physical health. I worked on surveying people after StepUPYEG was launched. This project aimed to revamp the University of Alberta staircase with motivating messages to promote well-being. I also led discussions about the planning, logistics, and implementation of SpotlightYEG that aimed to normalize mental health discussions as youth express themselves and their stories through fine arts . Through this, I was able to pursue a passion of mental health and learn more about leadership.
               </CardText>
@@ -222,7 +233,7 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/ceyc.PNG")} alt="cannot display"
+                     src={ceyc} alt="cannot display"
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
@@ -234,9 +245,9 @@ class Projects extends Component {
               <CardTitle
                   className="waterloop"
                   style={{
-                color: '#fff',
-                height: '176px',
-               }}>Waterloop Design Team</CardTitle>
+                    color: '#fff',
+                    height: '176px',
+                  }}>Waterloop Design Team</CardTitle>
               <CardText>
                 I worked for the mechanical and embedded systems subteams for Waterloop. I created a design for the battery enclosure and braking plates (braking system) for the Hyperloop using Solidworks, considering requirements such as materials and location of holes to fit pins. I also worked on figuring out how to receive responses from a RobotEQ controller using an Arduino and CAN-bus principles. Additionally, I was required to interpret information about an incremental rotary encoder using C programming.
               </CardText>
@@ -249,14 +260,14 @@ class Projects extends Component {
                 textAlign:'center'
               }} border>
                 <img style={{height:'100'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/waterloop1.PNG")} alt="cannot display"
+                     src={waterloop1} alt="cannot display"
                 />
               </CardActions>
               <CardActions style={{
                 textAlign:'center'
               }} border>
                 <img style={{height:'100'}}
-                     src={require("C:/Users/jaini/react-portfolio/src/components/waterloop2.PNG")} alt="cannot display"
+                     src={waterloop2} alt="cannot display"
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>

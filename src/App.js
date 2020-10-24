@@ -3,6 +3,7 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, Cell} from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import jainishlogo from "./jainishlogo.PNG"
 
 class App extends Component {
     render() {
@@ -12,7 +13,7 @@ class App extends Component {
                     <Header id="header-color"
                             title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
                                 <img className="hello"
-                                     src={require("C:/Users/jaini/react-portfolio/src/jainishlogo.PNG")} alt="cannot display"
+                                     src={jainishlogo} alt="cannot display"
                                 /></Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
