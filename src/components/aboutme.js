@@ -7,7 +7,7 @@ import nintyone from "./091.png"
 import niagara from "./niagarafalls.png"
 import threehundred from "./376.png"
 import threehundredninty from "./397.png"
-//import trophy from "./trophy.png"
+import trophy from "./trophy.png"
 import syrup from "./../syrup.png"
 
 
@@ -48,8 +48,8 @@ class About extends Component {
           <img className="profilepic"
                src={threehundredninty} alt="cannot display"
           /> &nbsp;
-          <img className="montreal"
-               src={syrup} alt="cannot display"
+          <img className="trophy"
+               src={trophy} alt="cannot display"
           /> &nbsp;
           <img className="profilepic"
                src={syrup} alt="cannot display"

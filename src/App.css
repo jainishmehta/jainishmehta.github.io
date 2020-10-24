@@ -39,10 +39,20 @@
   left: 450%;
   vertical-align: middle;
   text-align: center;
-  width:400px;
+  width:350px;
   height:200px;
+}
+.trophy {
+  top: 50%;
+  left: 450%;
+  vertical-align: middle;
+  text-align: center;
+  width:320px;
+  height:400px;
 
 }
+
+
 .uwlogo {
   width:75px;
   height:60px
