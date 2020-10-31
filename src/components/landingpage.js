@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Layout, Grid, Cell, Tab, Tabs} from 'react-mdl';
 import Fade from 'react-reveal/Fade';
-
 class Landing extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +17,7 @@ class Landing extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-          <div><h1>React.js, Angular.js, Selenium, TestNG, Cucumber, Express.js</h1></div>
+          <div><h1>React.js, Selenium, TestNG, Cucumber, Express.js</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
@@ -29,15 +28,12 @@ class Landing extends Component {
   }
   render() {
     return(
-        <Layout>
           <Grid className="landing-grid">
-            <div>
               <h1 className="header">
                 <Fade top cascade>
                   Hi, I'm Jainish Mehta!
                 </Fade>
               </h1>
-            </div>
             <div className="banner-text">
               <h1>Software Engineer</h1>
               <Grid  style={{background:'white'}}>
@@ -69,10 +65,9 @@ class Landing extends Component {
                   <i className="fa fa-github-square" aria-hidden="true"></i>
                 </a>
 
+                </div>
               </div>
-            </div>
           </Grid>
-        </Layout>
     )
   }
 }
