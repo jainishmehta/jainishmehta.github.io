@@ -27,6 +27,7 @@ class Projects extends Component {
           <div className="projects-grid ">
             <Card
                 border shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+              <Fade cascade>
               <CardTitle
                   className="smartvision"
                   style={{
@@ -67,10 +68,12 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+              </Fade>
             </Card>
 
             {/* Project 2 */}
             <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+              <Fade cascade>
               <CardTitle
                   className="aktiv"
                   style={{
@@ -119,10 +122,12 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+              </Fade>
             </Card>
 
             {/* Project 3 */}
             <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+              <Fade cascade>
               <CardTitle
                   className="thrifter"
                   style={{
@@ -177,6 +182,7 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+              </Fade>
             </Card>
           </div>
       )
@@ -184,6 +190,7 @@ class Projects extends Component {
       return (
           <div className="projects-grid ">
             <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
+            <Fade cascade>
               <CardTitle
                   className="rapid-prototyping"
                   style={{
@@ -202,7 +209,7 @@ class Projects extends Component {
               </CardActions>
               <CardActions style={{
                 textAlign:'center'
-              }} border>
+              }}>
                 <img style={{height:'100'}}
                      src={threedprinting1} alt="cannot display"
                 />
@@ -217,9 +224,11 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+            </Fade>
             </Card>
 
             <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
+              <Fade cascade>
               <CardTitle
                   className="ceyc"
                   style={{
@@ -239,9 +248,11 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+              </Fade>
             </Card>
 
             <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+              <Fade cascade>
               <CardTitle
                   className="waterloop"
                   style={{
@@ -273,8 +284,8 @@ class Projects extends Component {
               <CardMenu style={{color: '#fff'}}>
                 <IconButton name="share"/>
               </CardMenu>
+              </Fade>
             </Card>
-
           </div>
       )
     }

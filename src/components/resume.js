@@ -3,7 +3,9 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
+import Transcript from './Undergrad_Transcript_2B.pdf'
 import Pdf from './projectportfolio.pdf';
+import Resum from './Jainish_Mehta-Coop_Resume_October.pdf'
 import Fade from "react-reveal/Fade";
 import astronaut from "./astronaut.png"
 import redcanari from "./redcanari.png"
@@ -27,7 +29,7 @@ class Resume extends Component {
     return(
         <div className = "App">
           <button className="button button5" >
-            <a href={Pdf} target="_blank" className="item">Resume</a>
+            <a href={Resum} target="_blank" className="item">Resume</a>
           </button>
           &nbsp;
           <button className="button button5" >
@@ -35,7 +37,7 @@ class Resume extends Component {
           </button>
           &nbsp;
           <button className="button button5" >
-            <a href={Pdf} target="_blank" className="item">Transcript</a>
+            <a href={Transcript} target="_blank" className="item">Transcript</a>
           </button>
           <Grid>
             <Cell col={4}>

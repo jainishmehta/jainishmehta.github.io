@@ -18,7 +18,7 @@ class Landing extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-          <div><h1>React.js, Selenium, TestNG, Cucumber, Express.js</h1></div>
+          <div><h1>React.js, Selenium, TestNG, JUnit, GTest, Cucumber, Express.js</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
