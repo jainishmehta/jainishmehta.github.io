@@ -6,7 +6,7 @@ import UWlogo from "./UWlogo.png"
 class Education extends Component {
     render() {
         return(
-            <Grid>
+            <Grid className="font">
                 <Cell col={4}>
                     <i>{this.props.startYear} - {this.props.endYear}</i>
                 </Cell>

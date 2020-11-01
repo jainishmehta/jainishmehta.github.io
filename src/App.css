@@ -9,7 +9,7 @@
 
 
 .App{
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Arial", Times, serif;
   top: 100px;
   text-align: center;
   width: 100%;
@@ -24,12 +24,17 @@
   height:400px;
 
 }
+.quebec {
+  width:270px;
+  height:400px;
+
+}
 .montreal {
   top: 50%;
   left: 450%;
   vertical-align: middle;
   text-align: center;
-  width:500px;
+  width:250px;
   height:400px;
 
 }
@@ -39,8 +44,8 @@
   left: 450%;
   vertical-align: middle;
   text-align: center;
-  width:350px;
-  height:200px;
+  width:200px;
+  height:400px;
 }
 .trophy {
   top: 50%;
@@ -55,7 +60,11 @@
 
 .uwlogo {
   width:75px;
-  height:60px
+  height:70px
+}
+
+.font {
+  font-family: 'Arial';
 }
 .logo {
   width:40px;
@@ -181,17 +190,8 @@ a:visited, a:link, a:active
 .header{
   font-size: 70px;
   font-weight: bold;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
   color: white;
-  font-family: "Computer Modern";
-  text-decoration-color: yellow;
   text-align: center;
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 100px;
 }
 /* Resume Page css */
 .resume-right-col {
@@ -261,7 +261,6 @@ a:visited, a:link, a:active
   opacity: .6;
   width: 75%;
   margin: auto;
-  border-radius: 10px;
 }
 
 .banner-text h1 {

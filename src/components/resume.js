@@ -33,6 +33,10 @@ class Resume extends Component {
           <button className="button button5" >
             <a href={Pdf} target="_blank" className="item">Portfolio</a>
           </button>
+          &nbsp;
+          <button className="button button5" >
+            <a href={Pdf} target="_blank" className="item">Transcript</a>
+          </button>
           <Grid>
             <Cell col={4}>
               <div style={{textAlign: 'center'}}>
@@ -44,18 +48,18 @@ class Resume extends Component {
                 <h2 style={{paddingTop: '2em'}}>JAINISH MEHTA</h2>
               </Fade>
               <h4 style={{color: 'brown'}}>Engineer</h4>
-              <hr style={{borderTop: '3px solid #833fb2', width: '100%'}}/>
+              <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
               <p>An avid software engineer currently pursuing a
                 Mechatronics Engineering degree at the University of Waterloo with an option of Artifical Intelligence.
                 Currently looking for summer 2021 internships!
 
               </p>
-              <hr style={{borderTop: '3px solid #833fb2', width: '100%'}}/>
+              <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
               <h5>Phone</h5>
               <p>(519) 781-4847</p>
               <h5>Email</h5>
               <p>jainishmehta09@gmail.com</p>
-              <hr style={{borderTop: '3px solid #833fb2', width: '100%'}}/>
+              <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
             </Cell>
             <Cell className="resume-right-col" col={8}>
               <h2>Education</h2>
@@ -67,7 +71,7 @@ class Resume extends Component {
                   schoolDescription="Candidate for Honours Mechatronics Engineering, Co-op with an Option in Artifical Intelligence"
               />
 
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid red'}} />
 
               <h2>Experience</h2>
 
@@ -124,7 +128,7 @@ class Resume extends Component {
                   <p>Taught people of various background and ages, from 5 to 50, basics of swimming. Communicated with parents and gave end-of-term report cards.</p>
                 </Cell>
               </Grid>
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid red'}} />
 
 
             </Cell>

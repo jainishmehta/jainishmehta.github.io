@@ -12,13 +12,13 @@ class Landing extends Component {
 
     if(this.state.activeTab === 0){
       return(
-          <div><h1>C++, C, Python, Java, Javascript/Typescript, HTML, CSS, R, SQL</h1></div>
+          <div><h1>C++, C, Python, Java, Javascript/Typescript, HTML, CSS, Matlab, R, SQL</h1></div>
 
 
       )
     } else if(this.state.activeTab === 1) {
       return (
-          <div><h1>React.js, Angular.js, Selenium, TestNG, Cucumber, Express.js</h1></div>
+          <div><h1>React.js, Selenium, TestNG, Cucumber, Express.js</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
@@ -29,19 +29,16 @@ class Landing extends Component {
   }
   render() {
     return(
-        <Layout>
           <Grid className="landing-grid">
             <div>
-              <h1 className="header">
+              <h1 className="header" style={{textAlign:'center'}}>
                 <Fade top cascade>
                   Hi, I'm Jainish Mehta!
                 </Fade>
               </h1>
-            </div>
             <div className="banner-text">
+              <p style={{fontSize:'1px'}}></p>
               <h1>Software Engineer</h1>
-
-              <hr/>
               <Grid  style={{background:'white'}}>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                   <Tab>LANGUAGES</Tab>
@@ -72,8 +69,8 @@ class Landing extends Component {
 
               </div>
             </div>
+            </div>
           </Grid>
-        </Layout>
     )
   }
 }

@@ -26,7 +26,7 @@ class Projects extends Component {
       return (
           <div className="projects-grid ">
             <Card
-                border shadow={5} style={{minWidth: '450', left:'100px'}}>
+                border shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="smartvision"
                   style={{
@@ -70,7 +70,7 @@ class Projects extends Component {
             </Card>
 
             {/* Project 2 */}
-            <Card shadow={5} style={{minWidth: '450', left:'225px'}}>
+            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="aktiv"
                   style={{
@@ -122,7 +122,7 @@ class Projects extends Component {
             </Card>
 
             {/* Project 3 */}
-            <Card shadow={5} style={{minWidth: '450', left:'100px', margin:'auto'}}>
+            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="thrifter"
                   style={{
@@ -183,7 +183,7 @@ class Projects extends Component {
     } else if (this.state.activeTab === 1) {
       return (
           <div className="projects-grid ">
-            <Card shadow={5} style={{minWidth: '450', left:'100px'}}>
+            <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="rapid-prototyping"
                   style={{
@@ -219,7 +219,7 @@ class Projects extends Component {
               </CardMenu>
             </Card>
 
-            <Card shadow={5} style={{minWidth: '450', left:'230px'}}>
+            <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="ceyc"
                   style={{
@@ -241,7 +241,7 @@ class Projects extends Component {
               </CardMenu>
             </Card>
 
-            <Card shadow={5} style={{minWidth: '450', left:'100px', margin:'auto'}}>
+            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <CardTitle
                   className="waterloop"
                   style={{
