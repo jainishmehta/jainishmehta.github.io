@@ -12,6 +12,7 @@ class Education extends Component {
                          src={UWlogo} alt="cannot display"
                     />
                     <h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4>
+                    <p><i>{this.props.startYear}-{this.props.endYear}</i></p>
                     <p>{this.props.schoolDescription}</p>
                 </Cell>
             </Grid>
