@@ -27,6 +27,7 @@ function makeFile() {
 class Resume extends Component {
   render() {
     return(
+        <Fade cascade>
         <div className = "App">
           <button className="button button5" >
             <a href={Resum} target="_blank" className="item">Resume</a>
@@ -79,9 +80,6 @@ class Resume extends Component {
 
 
               <Grid>
-                <Cell col={4}>
-                  <i>Aug 2020 - present</i>
-                </Cell>
                 <Cell col={8}>
                   <img className="logo"
                        src={redcanari} alt="cannot display"
@@ -90,11 +88,11 @@ class Resume extends Component {
                   <i>Ottawa, ON</i>
                   <p>Created a web application a chrome extension using React.js. Used AWS Amplify framework for backend services, including Cognito for user authenication.</p>
                 </Cell>
+                <Cell col={4}>
+                  <i>Aug 2020 - present</i>
+                </Cell>
               </Grid>
               <Grid>
-                <Cell col={4}>
-                  <i>Jan 2020 - Apr 2020</i>
-                </Cell>
                 <Cell col={8}>
                   <img className="logo"
                        src={manulife} alt="cannot display"
@@ -103,11 +101,11 @@ class Resume extends Component {
                   <i>Waterloo, ON</i>
                   <p>Used Java to integrate Perfecto cloud platform into existing Selenium framework. This allowed teams to do more advanced mobile app and browser testing. I also worked with RESTful APIs and Postman to extract information about the Perfecto cloud to query onto Grafana, a solution that allows data visualization and analytics.</p>
                 </Cell>
+                <Cell col={4}>
+                  <i>Jan 2020 - Apr 2020</i>
+                </Cell>
               </Grid>
               <Grid>
-                <Cell col={4}>
-                  <i>May 2019 - Aug 2019</i>
-                </Cell>
                 <Cell col={8}>
                   <img className="logo"
                        src={mcsses} alt="cannot display"
@@ -116,11 +114,11 @@ class Resume extends Component {
                   <i>Ottawa, ON</i>
                   <p>Used C++ to create various functions that aided in a broader path planning algorithm. I solved complex math challenges, such as cubic spline interpolation, that involved linear algebra and numerical methods. I also did a calibration routine for an embedded systems project, wherein I needed to find the tilt of the rover as it climbs a hill.</p>
                 </Cell>
+                <Cell col={4}>
+                  <i>May 2019 - Aug 2019</i>
+                </Cell>
               </Grid>
               <Grid>
-                <Cell col={4}>
-                  <i>Jun 2016 - Aug 2018</i>
-                </Cell>
                 <Cell col={8}>
                   <img className="logo"
                        src={cityofedmonton} alt="cannot display"
@@ -129,6 +127,10 @@ class Resume extends Component {
                   <i>Edmonton, AB</i>
                   <p>Taught people of various background and ages, from 5 to 50, basics of swimming. Communicated with parents and gave end-of-term report cards.</p>
                 </Cell>
+
+                <Cell col={4}>
+                  <i>Jun 2016 - Aug 2018</i>
+                </Cell>
               </Grid>
               <hr style={{borderTop: '3px solid red'}} />
 
@@ -136,6 +138,7 @@ class Resume extends Component {
             </Cell>
           </Grid>
         </div>
+        </Fade>
 
     )
   }

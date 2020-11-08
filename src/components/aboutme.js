@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Cell, Grid, Layout} from "react-mdl";
+import {CardTitle, CardActions, Card, Cell, Grid, Layout, CardText, CardMenu, Button} from "react-mdl";
 import Fade from "react-reveal/Fade";
 import profilepic from "./../profilepic.PNG"
-import montreal from "./montreal.PNG"
+import montreal from "../montreal.PNG"
 import nintyone from "./091.png"
 import niagara from "./niagarafalls.png"
 import threehundred from "./376.png"
@@ -42,28 +42,66 @@ class About extends Component {
               <h1><i><strong>Hobbies and Interests</strong></i></h1>
           </Fade>
           <p>Some of my hobbies include music, basketball, soccer, web-surfing and travelling. I love trying new things, these include skiing, stargazing, learning new languages, and more!  </p>
-          <img className="montreal"
-               src={montreal} alt="cannot display"
-          /> &nbsp;
-          <img className="profilepic"
-               src={nintyone} alt="cannot display"
-          /> &nbsp;
-          <img className="niagarafalls"
-               src={niagara} alt="cannot display"
-          /> &nbsp;
-          <img className="profilepic"
-               src={threehundred} alt="cannot display"
-          /> &nbsp;
-          <img className="profilepic"
-               src={threehundredninty} alt="cannot display"
-          /> &nbsp;
-          <img className="trophy"
-               src={trophy} alt="cannot display"
-          /> &nbsp;
-          <img className="quebec"
-               src={syrup} alt="cannot display"
-          /> &nbsp;
-        </div>
+            <div className="projects-grid ">
+                <Card shadow={10} style={{width: '250px', margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                        <img className="montreal"
+                             src={montreal} alt="cannot display"
+                        />
+
+                    </Fade>
+                </Card>
+                <Card shadow={10} style={{width: '400px', height: '400px'}}>
+                    <Fade cascade>
+                    <img className="profilepic"
+                         src={nintyone} alt="cannot display"
+                    />
+
+                    </Fade>
+                </Card>
+
+                <Card shadow={10} style={{width: '200px', margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                        <img className="niagarafalls"
+                             src={niagara} alt="cannot display"
+                        />
+
+                    </Fade>
+                </Card>
+                <Card shadow={10} style={{width: '400px', margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                <img className="profilepic"
+                     src={threehundred} alt="cannot display"
+                />
+                </Fade>
+            </Card>
+            </div>
+            <div className="projects-grid ">
+                <Card shadow={10} style={{width: '400px',margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                        <img className="profilepic"
+                             src={threehundredninty} alt="cannot display"
+                        />
+                    </Fade>
+                </Card>
+
+                <Card shadow={10} style={{width: '320px',margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                        <img className="trophy"
+                             src={trophy} alt="cannot display"
+                        />
+                    </Fade>
+                </Card>
+                <Card shadow={10} style={{width: '270px',margin:'auto', marginTop:'0'}}>
+                    <Fade cascade>
+                        <img className="quebec"
+                             src={syrup} alt="cannot display"
+                        />
+                    </Fade>
+                </Card>
+            </div>
+          &nbsp;
+            </div>
     )
   }
 }

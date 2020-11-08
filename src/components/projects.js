@@ -26,7 +26,7 @@ class Projects extends Component {
       return (
           <div className="projects-grid ">
             <Card
-                border shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+                hoverable border shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
                   className="smartvision"
@@ -66,13 +66,12 @@ class Projects extends Component {
                 </i>
               </CardText>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
               </Fade>
             </Card>
 
             {/* Project 2 */}
-            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+            <Card shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
                   className="aktiv"
@@ -120,13 +119,12 @@ class Projects extends Component {
                 </i>
               </CardText>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
               </Fade>
             </Card>
 
             {/* Project 3 */}
-            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+            <Card shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
                   className="thrifter"
@@ -180,7 +178,6 @@ class Projects extends Component {
                 </i>
               </CardText>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
               </Fade>
             </Card>
@@ -189,7 +186,7 @@ class Projects extends Component {
     } else if (this.state.activeTab === 1) {
       return (
           <div className="projects-grid ">
-            <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
+            <Card shadow={10} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
             <Fade cascade>
               <CardTitle
                   className="rapid-prototyping"
@@ -222,12 +219,11 @@ class Projects extends Component {
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
             </Fade>
             </Card>
 
-            <Card shadow={5} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
+            <Card shadow={10} style={{minWidth: '450',margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
                   className="ceyc"
@@ -246,12 +242,11 @@ class Projects extends Component {
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
               </Fade>
             </Card>
 
-            <Card shadow={5} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
+            <Card shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
                   className="waterloop"
@@ -282,7 +277,6 @@ class Projects extends Component {
                 />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share"/>
               </CardMenu>
               </Fade>
             </Card>
@@ -300,11 +294,7 @@ class Projects extends Component {
           </Tabs>
 
 
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+              {this.toggleCategories()}
 
 
         </div>

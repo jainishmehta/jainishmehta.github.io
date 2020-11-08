@@ -6,11 +6,8 @@ import UWlogo from "./UWlogo.png"
 class Education extends Component {
     render() {
         return(
-            <Grid className="font">
-                <Cell col={4}>
-                    <i>{this.props.startYear} - {this.props.endYear}</i>
-                </Cell>
-                <Cell col={8}>
+            <Grid className="font" style={{margin:'auto'}}>
+                <Cell col={8} style={{margin:'auto'}}>
                     <img className="uwlogo"
                          src={UWlogo} alt="cannot display"
                     />
