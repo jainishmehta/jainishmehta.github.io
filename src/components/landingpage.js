@@ -3,6 +3,7 @@ import {Layout, Grid, Cell, Tab, Tabs} from 'react-mdl';
 import Fade from 'react-reveal/Fade';
 import Typewriter from 'typewriter-effect';
 
+
 class Landing extends Component {
 
   constructor(props) {
@@ -38,13 +39,13 @@ class Landing extends Component {
               <h1 className="header" style={{textAlign:'center'}}>
                 <Fade top cascade>
                   <Typewriter
-                      options={{
-                        strings: [
-                          "Hi, my name is Jainish Mehta!",
-                          "I am a Mechatronics Student",
-                        ],
-                        autoStart: true,
-                        loop: true,
+                      onInit={(typewriter) => {
+
+                        typewriter.typeString('Hi, my name is Jainish Mehta!')
+                            .pauseFor(10000)
+                            .deleteAll();
+                        typewriter.typeString('Welcome to my Website!')
+                            .start();
                       }}
                   />
                 </Fade>
