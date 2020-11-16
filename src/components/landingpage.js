@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Layout, Grid, Cell, Tab, Tabs} from 'react-mdl';
 import Fade from 'react-reveal/Fade';
+import Typewriter from 'typewriter-effect';
 
 class Landing extends Component {
+
   constructor(props) {
     super(props);
     this.state = { activeTab: 0 };
@@ -28,12 +30,23 @@ class Landing extends Component {
 
   }
   render() {
+
     return(
+
           <Grid className="landing-grid">
             <div>
               <h1 className="header" style={{textAlign:'center'}}>
                 <Fade top cascade>
-                  Hi, I'm Jainish Mehta!
+                  <Typewriter
+                      options={{
+                        strings: [
+                          "Hi, my name is Jainish Mehta!",
+                          "I am a Mechatronics Student",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                  />
                 </Fade>
               </h1>
             <div className="banner-text">
