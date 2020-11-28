@@ -69,7 +69,7 @@ class Landing extends Component {
               <div className="social-links">
 
                 {/* LinkedIn */}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <a href="https://www.linkedin.com/in/jainishmehta/" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
                 <a href="mailto:jainishmehta09@gmail" target="_blank">
