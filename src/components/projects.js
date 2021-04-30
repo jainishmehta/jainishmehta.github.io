@@ -211,7 +211,7 @@ class Projects extends Component {
                     height: '176px',
                   }}>Waterloop Design Team</CardTitle>
               <CardText>
-                I worked for the mechanical and embedded systems subteams for Waterloop. I created a design for the battery enclosure and braking plates (braking system) for the Hyperloop using Solidworks, considering requirements such as materials and location of holes to fit pins. I also worked on figuring out how to receive responses from a RobotEQ controller using an Arduino and CAN-bus principles. Additionally, I was required to interpret information about an incremental rotary encoder using C programming.
+                I worked for the mechanical and embedded systems subteams for Waterloop. I helped with a team to create a design for the battery enclosure and braking plates (braking system) for the Hyperloop using Solidworks (while I helped with the Mechanical team), considering requirements such as materials and location of holes to fit pins. I also worked with the embedded software team on figuring out how to receive responses from a RobotEQ controller using an Arduino and CAN-bus principles. Additionally, I was required to interpret information about an incremental rotary encoder using C programming.
               </CardText>
               <CardActions style={{
                 textAlign:'center'
@@ -228,9 +228,6 @@ class Projects extends Component {
               <CardActions style={{
                 textAlign:'center'
               }} border>
-                <img style={{height:'100'}}
-                     src={waterloop2} alt="cannot display"
-                />
               </CardActions>
               <CardMenu style={{color: '#fff'}}>
               </CardMenu>
