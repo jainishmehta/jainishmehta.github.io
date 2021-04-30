@@ -25,50 +25,6 @@ class Projects extends Component {
     if (this.state.activeTab === 0) {
       return (
           <div className="projects-grid ">
-            <Card
-                hoverable border shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
-              <Fade cascade>
-              <CardTitle
-                  className="smartvision"
-                  style={{
-                    color: '#fff',
-                    height: '176px'
-                  }}>SmartVision</CardTitle>
-              <CardText>
-                The goal of this project was to help disabled individuals interact with their surroundings using a
-                software that takes in images and converts it into text that is later converted into speech. I got
-                hands-on experience with UI/UX designs, iOS mobile applications, and first-time exposure to Swift. I
-                also learned more about computer vision and how to use Apple’s Vision framework and CoreML models for
-                image recognition.
-              </CardText>
-              <CardActions  style={{
-                textAlign:'center'
-              }} border>
-                <Button href='https://github.com/jainishmehta/ObjectRecognition' colored>GITHUB</Button>
-              </CardActions>
-              <CardActions  style={{
-                textAlign:'center'
-              }} border>
-                <img style={{height:'100', width:'75'}}
-                     src={smartv} alt="cannot display"
-                />
-              </CardActions>
-              <CardText style={{
-                textAlign:'center'
-              }} border>
-                <i>
-                  <strong>
-
-                    Technologies Involved: Apple's Vision API, Swift, git (Github)
-
-                  </strong>
-
-                </i>
-              </CardText>
-              <CardMenu style={{color: '#fff'}}>
-              </CardMenu>
-              </Fade>
-            </Card>
 
             {/* Project 2 */}
             <Card shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
