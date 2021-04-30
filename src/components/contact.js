@@ -12,9 +12,7 @@ class Contact extends Component {
           </Fade>
           <hr/>
           <i>
-            Have a suggestion, want to work together, or simply want to chat?
-
-            Feel free to contact me!</i>
+            Want to work together or simply want to chat, feel free to contact me!</i>
           <List >
             <ListItem>
               <ListItemContent className="icons" style={{textAlign:"center", fontSize: '30px'}}>
