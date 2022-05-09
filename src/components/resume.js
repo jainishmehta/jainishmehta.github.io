@@ -3,14 +3,17 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import Transcript from './Undergrad_Transcript_2B.pdf'
+import Transcript from './Undergrad_Transcript_3B.pdf'
 import Pdf from './projectportfolio.pdf';
-import Resum from './Jainish_Mehta-Coop_Resume_October.pdf'
+import Resum from './Jainish_Mehta_Resume_May_2022.pdf'
 import Fade from "react-reveal/Fade";
 import astronaut from "./astronaut.png"
 import redcanari from "./redcanari.png"
 import manulife from "./manulife.png"
 import mcsses from "./missioncontrol.png"
+import teradata from "./teradata.png"
+import nvidia from "./nvidia.png"
+import coinbase from "./coinbase.png"
 import cityofedmonton from "./cityofedmonton.png"
 
 
@@ -54,7 +57,7 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
               <p>An avid software engineer currently pursuing a
                 Mechatronics Engineering degree at the University of Waterloo with an option of Artifical Intelligence.
-                Currently looking for summer 2021 internships!
+                Currently looking for 2023 new grad internships!
 
               </p>
               <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
@@ -78,7 +81,45 @@ class Resume extends Component {
 
               <h2>Experience</h2>
 
-
+              <Grid>
+                <Cell col={8}>
+                  <img className="logo"
+                       src={coinbase} alt="cannot display"
+                  />
+                  <h4 style={{marginTop:'0px'}}> Coinbase - Data Scientist </h4>
+                  <i> San Francisco, California (Remote) </i>
+                  <p> TBH </p>
+                </Cell>
+                <Cell col={4}>
+                  <i>May 2022 - Present</i>
+                </Cell>
+              </Grid>
+              <Grid>
+                <Cell col={8}>
+                  <img className="logo"
+                       src={nvidia} alt="cannot display"
+                  />
+                  <h4 style={{marginTop:'0px'}}>NVIDIA - Backend Software Engineer </h4>
+                  <i>Santa Clara, California (Remote) </i>
+                  <p> Developed 4 new major features involving tensors, python codelets, python bindings, and .yaml graph files. </p>
+                </Cell>
+                <Cell col={4}>
+                  <i>Jan 2022 - Apr 2022</i>
+                </Cell>
+              </Grid>
+              <Grid>
+                <Cell col={8}>
+                  <img className="logo"
+                       src={teradata} alt="cannot display"
+                  />
+                  <h4 style={{marginTop:'0px'}}>Teradata - Data Scientist </h4>
+                  <i>San Diego, California (Remote) </i>
+                  <p>Built polynomial regression model to determine future client CPU utilization. Used SQL and pandas to clean data.</p>
+                </Cell>
+                <Cell col={4}>
+                  <i>May 2021 - Aug 2021</i>
+                </Cell>
+              </Grid>
               <Grid>
                 <Cell col={8}>
                   <img className="logo"
@@ -89,7 +130,7 @@ class Resume extends Component {
                   <p>Created a web application a chrome extension using React.js. Used AWS Amplify framework for backend services, including Cognito for user authenication.</p>
                 </Cell>
                 <Cell col={4}>
-                  <i>Aug 2020 - present</i>
+                  <i>Aug 2020 - Dec 2020</i>
                 </Cell>
               </Grid>
               <Grid>
