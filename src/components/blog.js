@@ -13,7 +13,7 @@ class Blog extends Component {
                             <Fade top cascade>
                                 <h1 style={{textAlign:'center', font:'Times New Roman'}}>
                                     <i>
-                                        <strong>Coming soon...</strong>
+                                        <strong>Check out my blog!</strong>
                                     </i>
                                 </h1>
                                 <a href="https://medium.com/@jainishmehta09" rel="noopener noreferrer" target="_blank">
