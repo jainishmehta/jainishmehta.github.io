@@ -23,8 +23,9 @@ class App extends Component {
                             <Link to="/blogs">Blogs</Link>
                         </Navigation>
                     </Header>
-                    <Drawer className= "drawer" title="Slider">
+                    <Drawer className= "drawer" title="Navigater">
                         <Navigation>
+                            <Link to="/main">Main</Link>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>
                             <Link to="/projects">Projects</Link>
