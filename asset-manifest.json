@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.2886ed5f.css",
-    "main.js": "/static/js/main.b1734247.js",
+    "main.css": "/static/css/main.0e445804.css",
+    "main.js": "/static/js/main.b2cf5a9a.js",
     "static/media/376.png": "/static/media/376.e2a4035af267289117dc.png",
     "static/media/space2.png": "/static/media/space2.f4618a1e89ede5901be0.png",
     "static/media/397.png": "/static/media/397.19f27448fe3e3a376427.png",
     "static/media/091.png": "/static/media/091.b6bb4822dd6cfd8a6db2.png",
-    "static/media/space7.png": "/static/media/space7.df1cda6b380ab57c1ddc.png",
     "static/media/space3.png": "/static/media/space3.1f79e1ed1907ff217cd7.png",
     "static/media/trophy.png": "/static/media/trophy.9b053476517cc6bbe144.png",
     "static/media/projectportfolio.pdf": "/static/media/projectportfolio.718241cb431021d12fc1.pdf",
@@ -22,7 +21,6 @@
     "static/media/montreal.PNG": "/static/media/montreal.8837c36064b3648625d3.PNG",
     "static/media/waterloop1.PNG": "/static/media/waterloop1.2661b1297e0d327979d7.PNG",
     "static/media/Jainish_Mehta_Resume_May_2022.pdf": "/static/media/Jainish_Mehta_Resume_May_2022.4563ad948dc37606c96b.pdf",
-    "static/media/3dprinting2.PNG": "/static/media/3dprinting2.9570ae5305f2241f3bbf.PNG",
     "static/media/Aktiv3.PNG": "/static/media/Aktiv3.a1b4a1949a20f4e37dc9.PNG",
     "static/media/3dprinting1.PNG": "/static/media/3dprinting1.5b01f2727706b1ec8bb9.PNG",
     "static/media/niagarafalls.png": "/static/media/niagarafalls.8aa754b0cf5999d2ea32.png",
@@ -41,11 +39,11 @@
     "static/media/Undergrad_Transcript_3B.pdf": "/static/media/Undergrad_Transcript_3B.f74233b5403639b32d89.pdf",
     "static/media/manulife.png": "/static/media/manulife.f7270fa1884a0ccd8efd.png",
     "index.html": "/index.html",
-    "main.2886ed5f.css.map": "/static/css/main.2886ed5f.css.map",
-    "main.b1734247.js.map": "/static/js/main.b1734247.js.map"
+    "main.0e445804.css.map": "/static/css/main.0e445804.css.map",
+    "main.b2cf5a9a.js.map": "/static/js/main.b2cf5a9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2886ed5f.css",
-    "static/js/main.b1734247.js"
+    "static/css/main.0e445804.css",
+    "static/js/main.b2cf5a9a.js"
   ]
 }
