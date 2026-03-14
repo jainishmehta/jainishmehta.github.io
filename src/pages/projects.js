@@ -43,11 +43,8 @@ class Projects extends Component {
               }} border>
                 <i>
                   <strong>
-
                     Technologies Involved: Python, BigQuery, Great Expectations, Tableau
-
                   </strong>
-
                 </i>
               </CardText>
               <CardMenu style={{color: '#fff'}}>
