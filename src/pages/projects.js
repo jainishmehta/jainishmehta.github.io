@@ -25,11 +25,16 @@ class Projects extends Component {
             <Card shadow={10} style={{minWidth: '450', margin:'auto', marginTop:'0'}}>
               <Fade cascade>
               <CardTitle
-                  className="healthinformationrag"
+                  className="stravahealthpipeline"
                   style={{
                     color: '#fff',
                     height: '176px'
                   }}>Strava Health Pipeline</CardTitle>
+              <CardActions style={{
+                textAlign:'center'
+              }} border>
+                <Button href="https://github.com/jainishmehta/strava_pipeline" colored>GitHub</Button>
+              </CardActions>
               <CardText>
                 Created a pipeline to extract health information from Strava data to visualize activities data on a map.
               </CardText>
@@ -163,11 +168,7 @@ class Projects extends Component {
             <Tab>SOFTWARE</Tab>
             <Tab>OTHER</Tab>
           </Tabs>
-
-
               {this.toggleCategories()}
-
-
         </div>
     )
   }
