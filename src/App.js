@@ -3,7 +3,7 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, Cell} from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import jainishlogo from "./jainishlogo.PNG"
+import jainishlogo from './assets/jainishlogo.PNG';
 
 class App extends Component {
     render() {
