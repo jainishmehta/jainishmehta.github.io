@@ -3,18 +3,18 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from '../components/skills';
-import Transcript from '../assets/Undergrad_Transcript_3B.pdf'
-import Pdf from '../assets/projectportfolio.pdf';
-import Resum from '../assets/J_Mehta_Resume__.pdf';
+import Transcript from '../components/Undergrad_Transcript_3B.pdf'
+import Pdf from '../components/projectportfolio.pdf';
+import Resum from '../components/J_Mehta_Resume__.pdf';
 import Fade from "react-reveal/Fade";
-import astronaut from "../assets/astronaut.png"
-import redcanari from "../assets/redcanari.png"
-import manulife from "../assets/manulife.png"
-import mcsses from "../assets/missioncontrol.png"
-import teradata from "../assets/teradata.png"
-import nvidia from "../assets/nvidia.png"
-import coinbase from "../assets/coinbase.png"
-import cityofedmonton from "../assets/cityofedmonton.png"
+import astronaut from "../components/astronaut.png"
+import redcanari from "../components/redcanari.png"
+import manulife from "../components/manulife.png"
+import mcsses from "../components/missioncontrol.png"
+import teradata from "../components/teradata.png"
+import nvidia from "../components/nvidia.png"
+import coinbase from "../components/coinbase.png"
+import cityofedmonton from "../components/cityofedmonton.png"
 
 
 function makeFile() {
@@ -32,9 +32,7 @@ class Resume extends Component {
     return(
         <Fade cascade>
         <div className = "App">
-          <button className="button button5" >
-            <a href={Resum} target="_blank" className="item">Resume</a>
-          </button>
+          <a href={Resum} target="_blank" rel="noopener noreferrer" className="button button5">Resume</a>
           &nbsp;
           <button className="button button5" >
             <a href={Pdf} target="_blank" className="item">Portfolio</a>
@@ -68,7 +66,7 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid brown', width: '100%'}}/>
             </Cell>
             <Cell className="resume-right-col" col={8}>
-              <h2>Education</h2>
+              <h2 className="resume-h2-education">Education</h2>
 
               <Education
                   startYear={2018}
@@ -79,100 +77,93 @@ class Resume extends Component {
 
               <hr style={{borderTop: '3px solid red'}} />
 
-              <h2>Experience</h2>
+              <h2 className="resume-h2-experience">Experience</h2>
 
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={coinbase} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}> Coinbase - Data Scientist </h4>
-                  <i> San Francisco, California (Remote) </i>
-                  <p> TBH </p>
-                </Cell>
-                <Cell col={4}>
-                  <i>May 2022 - Present</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={nvidia} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>NVIDIA - Backend Software Engineer </h4>
-                  <i>Santa Clara, California (Remote) </i>
-                  <p> Developed 4 new major features involving tensors, python codelets, python bindings, and .yaml graph files. </p>
-                </Cell>
-                <Cell col={4}>
-                  <i>Jan 2022 - Apr 2022</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={teradata} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>Teradata - Data Scientist </h4>
-                  <i>San Diego, California (Remote) </i>
-                  <p>Built polynomial regression model to determine future client CPU utilization. Used SQL and pandas to clean data.</p>
-                </Cell>
-                <Cell col={4}>
-                  <i>May 2021 - Aug 2021</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={redcanari} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>Red Canari - Full Stack Software Developer</h4>
-                  <i>Ottawa, ON</i>
-                  <p>Created a web application a chrome extension using React.js. Used AWS Amplify framework for backend services, including Cognito for user authenication.</p>
-                </Cell>
-                <Cell col={4}>
-                  <i>Aug 2020 - Dec 2020</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={manulife} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>Manulife Financial - DevOps Software Engineering</h4>
-                  <i>Waterloo, ON</i>
-                  <p>Used Java to integrate Perfecto cloud platform into existing Selenium framework. This allowed teams to do more advanced mobile app and browser testing. I also worked with RESTful APIs and Postman to extract information about the Perfecto cloud to query onto Grafana, a solution that allows data visualization and analytics.</p>
-                </Cell>
-                <Cell col={4}>
-                  <i>Jan 2020 - Apr 2020</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={mcsses} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>Mission Control Space Services - Robotics/Software Engineering</h4>
-                  <i>Ottawa, ON</i>
-                  <p>Used C++ to create various functions that aided in a broader path planning algorithm. I solved complex math challenges, such as cubic spline interpolation, that involved linear algebra and numerical methods. I also did a calibration routine for an embedded systems project, wherein I needed to find the tilt of the rover as it climbs a hill.</p>
-                </Cell>
-                <Cell col={4}>
-                  <i>May 2019 - Aug 2019</i>
-                </Cell>
-              </Grid>
-              <Grid>
-                <Cell col={8}>
-                  <img className="logo"
-                       src={cityofedmonton} alt="cannot display"
-                  />
-                  <h4 style={{marginTop:'0px'}}>City of Edmonton - Water Safety Instructor</h4>
-                  <i>Edmonton, AB</i>
-                  <p>Taught people of various background and ages, from 5 to 50, basics of swimming. Communicated with parents and gave end-of-term report cards.</p>
-                </Cell>
+              <div className="resume-experience">
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={coinbase} alt="" />
+                    </div>
+                    <h4>Coinbase - Data Engineer</h4>
+                    <div className="resume-experience-dates">May 2022 – Aug 2022</div>
+                    <div className="resume-experience-location">San Francisco, California (Remote)</div>
+                    <p>TBH</p>
+                  </div>
+                </div>
 
-                <Cell col={4}>
-                  <i>Jun 2016 - Aug 2018</i>
-                </Cell>
-              </Grid>
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={nvidia} alt="" />
+                    </div>
+                    <h4>NVIDIA - Backend Software Engineer </h4>
+                    <div className="resume-experience-dates">Jan 2022 – Apr 2022</div>
+                    <div className="resume-experience-location">Santa Clara, California (Remote)</div>
+                    <p> Developed new functionalities involving tensors, python codelets, python bindings, and .yaml graph files. </p>
+                  </div>
+                </div>
+
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={teradata} alt="" />
+                    </div>
+                    <h4>Teradata - Data Scientist </h4>
+                    <div className="resume-experience-dates">May 2021 – Aug 2021</div>
+                    <div className="resume-experience-location">San Diego, California (Remote)</div>
+                    <p>Built polynomial regression model to determine future client CPU utilization. Used SQL and pandas to clean data.</p>
+                  </div>
+                </div>
+
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={redcanari} alt="" />
+                    </div>
+                    <h4>Red Canari - Full Stack Software Developer</h4>
+                    <div className="resume-experience-dates">Aug 2020 – Dec 2020</div>
+                    <div className="resume-experience-location">Ottawa, ON</div>
+                    <p>Created a web application a chrome extension using React.js. Used AWS Amplify framework for backend services, including Cognito for user authenication.</p>
+                  </div>
+                </div>
+
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={manulife} alt="" />
+                    </div>
+                    <h4>Manulife Financial - Quality Services Software Engineering</h4>
+                    <div className="resume-experience-dates">Jan 2020 – Apr 2020</div>
+                    <div className="resume-experience-location">Waterloo, ON</div>
+                    <p>Used Java to integrate Perfecto cloud platform into existing Selenium framework. This allowed teams to do more advanced mobile app and browser testing. I also worked with RESTful APIs and Postman to extract information about the Perfecto clouds, a solution that allows data visualization and analytics.</p>
+                  </div>
+                </div>
+
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={mcsses} alt="" />
+                    </div>
+                    <h4>Mission Control - Software Engineering</h4>
+                    <div className="resume-experience-dates">May 2019 – Aug 2019</div>
+                    <div className="resume-experience-location">Ottawa, ON</div>
+                    <p>Used C++ to create various functions that aided in a broader path planning algorithm. I enhanced cubic spline interpolation and performed a calibration routine for an embedded systems project, wherein I needed to find the tilt of the rover as it climbs a hill.</p>
+                  </div>
+                </div>
+
+                <div className="resume-experience-row">
+                  <div className="resume-experience-card">
+                    <div className="resume-experience-logo-wrap">
+                      <img className="logo" src={cityofedmonton} alt="" />
+                    </div>
+                    <h4>City of Edmonton - Water Safety Instructor</h4>
+                    <div className="resume-experience-dates">Jun 2016 – Aug 2018</div>
+                    <div className="resume-experience-location">Edmonton, AB</div>
+                    <p>Taught people of various background and ages, from 5 to 50, basics of swimming. Communicated with parents and gave end-of-term report cards.</p>
+                  </div>
+                </div>
+              </div>
               <hr style={{borderTop: '3px solid red'}} />
 
 

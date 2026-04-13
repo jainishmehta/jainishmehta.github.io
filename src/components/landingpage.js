@@ -13,7 +13,6 @@ class Landing extends Component {
   }
 
   componentDidMount() {
-    // Check screen width to determine if typewriter effect should start
     if (window.innerWidth < 400) {
       this.setState({ isTyping: true });
     }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {CardTitle, CardActions, Card, Cell, Grid, Layout, CardText, CardMenu, Button} from "react-mdl";
 import Fade from "react-reveal/Fade";
-import profilepic from "./../profilepic.PNG"
+import profilepic from "../components/Jainish_Profile.jpg"
 import montreal from "../montreal.PNG"
 import nintyone from "./091.png"
 import niagara from "./niagarafalls.png"

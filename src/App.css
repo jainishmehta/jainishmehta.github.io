@@ -64,9 +64,46 @@
 .font {
   font-family: 'Arial';
 }
+
 .logo {
-  width:40px;
-  height:40px
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.resume-job-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 0.35rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resume-job-heading .logo {
+  flex-shrink: 0;
+  object-position: top left;
+}
+
+.resume-job-heading h4 {
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: left;
+  line-height: 1.35;
+}
+
+@media (max-width: 480px) {
+  .resume-job-heading {
+    gap: 10px;
+  }
+
+  .resume-job-heading .logo {
+    width: 36px;
+    height: 36px;
+  }
 }
 .button {
   background-color: #4CAF50; /* Green */
@@ -121,8 +158,17 @@ a:visited, a:link, a:active
   font-family: "Times New Roman", Times, serif;
   background-color: yellow;
 }
+.stravahealthpipeline {
+  background: url("../src/space2.png") center / cover;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .aktiv {
-  background:url("assets/space2.png") center / cover;
+  background:url("../src/space3.png") center / cover;
   text-align: center;
   top: 0;
   left: 0;
@@ -130,7 +176,7 @@ a:visited, a:link, a:active
   height: 100%;
 }
 .thrifter {
-  background:url("assets/space3.png") center / cover;
+  background:url("../src/space4.png") center / cover;
   text-align: center;
   top: 0;
   left: 0;
@@ -138,7 +184,7 @@ a:visited, a:link, a:active
   height: 100%;
 }
 .rapid-prototyping {
-  background:url("assets/space4.png") center / cover;
+  background:url("../src/space4.png") center / cover;
   text-align: center;
   top: 0;
   left: 0;
@@ -146,7 +192,7 @@ a:visited, a:link, a:active
   height: 100%;
 }
 .smartvision {
-  background:url("assets/space.png") center / cover;
+  background:url("../src/space.png") center / cover;
   text-align: center;
   top: 0;
   left: 100px;
@@ -155,7 +201,7 @@ a:visited, a:link, a:active
 
 }
 . {
-  background:url("assets/space5.png") center / cover;
+  background:url("../src/space5.png") center / cover;
   text-align: center;
   top: 0;
   left: 0;
@@ -163,7 +209,7 @@ a:visited, a:link, a:active
   height: 100%;
 }
 .waterloop {
-  background:url("assets/space6.png") center / cover;
+  background:url("../src/space6.png") center / cover;
   text-align: center;
   top: 0;
   left: 0;
@@ -175,17 +221,39 @@ a:visited, a:link, a:active
   background-color: white;
 }
 
-.landing-grid {
-  background:url("assets/space.png") center / cover;
-  text-align: center;
-  top: 0;
-  left: 0;
+.demo-big-content .mdl-layout__content {
   width: 100%;
-  height: 100%;
+  box-sizing: border-box;
+}
+
+.landing-grid {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../src/space.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 .projects-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* MDL CardActions are flex in newer MDL; center GitHub / media rows */
+.projects-grid .mdl-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .banner-text {
@@ -205,9 +273,131 @@ a:visited, a:link, a:active
   background: #27221F;
   color: white;
   padding: 2em;
+  text-align: left;
 }
 
-/* contact page css */
+.resume-right-col h2 {
+  text-align: left;
+}
+
+.resume-right-col h2.resume-h2-education {
+  text-align: center;
+}
+
+.resume-right-col h2.resume-h2-experience {
+  text-align: center;
+}
+
+.resume-education {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-education-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.resume-education-logo-wrap .uwlogo {
+  display: block;
+  margin: 0 auto;
+}
+
+.resume-education-text {
+  min-width: 0;
+  width: 100%;
+  max-width: 36rem;
+  text-align: center;
+}
+
+.resume-education-text h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.resume-education-text p {
+  margin: 0.35rem 0 0;
+  text-align: center;
+}
+
+.resume-right-col > .mdl-grid,
+.resume-right-col .mdl-grid {
+  align-items: flex-start;
+}
+
+/*
+ * Experience: vertical stack, centered. Scoped under .resume-right-col so we
+ * beat .resume-right-col { text-align: left } and any MDL defaults.
+ */
+.resume-right-col .resume-experience {
+  text-align: center;
+}
+
+.resume-right-col .resume-experience-row {
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  margin-bottom: 1.75rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.resume-right-col .resume-experience-row:last-child {
+  margin-bottom: 0;
+}
+
+.resume-right-col .resume-experience-card {
+  text-align: center;
+}
+
+.resume-experience-logo-wrap {
+  text-align: center;
+}
+
+.resume-experience-logo-wrap .logo {
+  font-style: italic;
+  text-align: center;
+  line-height: 1.35;
+  margin: 0;
+  width: 100%;
+  align-self: stretch;
+  display: block;
+  box-sizing: border-box;
+}
+
+.resume-experience-card h4 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 1.35;
+  align-self: stretch;
+}
+
+.resume-experience-dates,
+.resume-experience-location {
+  font-style: italic;
+  text-align: center;
+  line-height: 1.35;
+  margin: 0;
+  width: 100%;
+  align-self: stretch;
+  display: block;
+  box-sizing: border-box;
+}
+
+.resume-experience-card > p {
+  display: block;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  align-self: stretch;
+}
 
 .contact-body {
   text-align: center;
@@ -346,9 +536,6 @@ a:visited, a:link, a:active
 
   .banner-text p {
     font-size: 0.9rem;
-  }
-
-  .social-links {
   }
 
   .social-links i {
